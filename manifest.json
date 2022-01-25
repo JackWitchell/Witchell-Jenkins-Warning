@@ -1,0 +1,24 @@
+{
+    "name": "Witchell Production Warning",
+    "version": "0.01",
+    "description": "Adds warning to top of webpage when on Jenkins Production",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://orchestrator.tools.production.tax.service.gov.uk/*"
+            ],
+            "css": ["css/production.css"],
+            "js": ["js/productionContentScript.js"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "https://orchestrator.tools.externaltest.tax.service.gov.uk/*"
+            ],
+            "css": ["css/externalTest.css"],
+            "js": ["js/externalTestContentScript.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "manifest_version": 2
+}
