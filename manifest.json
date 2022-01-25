@@ -1,5 +1,5 @@
 {
-    "name": "Witchell Production Warning",
+    "name": "Witchell Jenkins Warning",
     "version": "0.01",
     "description": "Adds warning to top of webpage when on Jenkins Production",
     "content_scripts": [
